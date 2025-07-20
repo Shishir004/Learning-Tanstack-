@@ -12,7 +12,7 @@ export default function FindEventSection() {
       fetchEvents({signal , value}),
     queryKey: ["events", { search: value }],
     enabled : value!==undefined
-  });
+  }); 
   function handleSubmit(event) {
     event.preventDefault();
     setValue(searchElement.current.value);
